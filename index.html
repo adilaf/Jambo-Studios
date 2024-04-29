@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <title>Jambo Studios Creative Multimedia Services</title>  <!--this is the title in the browser TAB-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="path/to/flickity.css" media="screen">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main>
+        <nav id="hamnav">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+        
+            <div id="hamitems">
+                <a class="link" href="#home"><img class="icon" src="images/JAMBO_STUDIOS_LOGOS-2024_ON WHITE .png" alt="logo-image"/></a>
+                <a class="link" href="#about">About</a>
+                <a class="link" href="projects.html">Projects</a>
+                <a class="link" href="films.html">Jambo Films</a>
+                <a class="link" href="#contact">Contact</a>
+            </div>
+        </nav>
+<!------------------------------------------Home Section------------------------------------------->           
+        <section id="home">
+            <div class="holder">
+                <video id="video1" loop autoplay muted playsinline loading="lazy">
+                    <source src="videos/paratest12.mp4" type="video/mp4">
+                </video>
+            </div>
+            <section id="heading">
+                <h1>
+                    <span>Creative solutions for </span>
+                    <span class="dynamic-word">you...</span>
+                </h1>  
+                <h5>
+                    <button class="hero-subheading" onclick="scrollToSection('service1'); removeFocus()">Film & Video</button>
+                    <button class="hero-subheading" onclick="scrollToSection('service2'); removeFocus()">Design</button>
+                    <button class="hero-subheading" onclick="scrollToSection('service3'); removeFocus()">Animation & Motion Graphics</button>
+                </h5>
+            </section>            
+        </section>
+
+<!------------------------------------------About Section------------------------------------------->
+        
+        <section id="about">
+            <img id="Adils-img" src="images/Adil's-image.JPG" alt="Adil's Profile Picture"/>
+            <section id="about-description">
+                <br>
+                <h4>Jambo! (Hello)</h4>
+                    <br>
+                <h5>I'm Adil,</h5>
+                <p>
+                    As a creative, I have always been passionate about storytelling and the power of visual communication.
+                    <br>
+                    <br>
+                    I started Jambo Studios to help businesses, organisations & individuals
+                    create meaningful content and grow their outreach through channeling their inner creativity. 
+                    <br>
+                    <br>
+                    I look forward to working with you and establishing your creativee identity.
+                </p>
+                <br>
+                <button class="contact-button" onclick="scrollToSection('contact'); removeFocus()">Contact Us</button>
+            </section>
+        </section>
+
+<!------------------------------------------Projects Section------------------------------------------->   
+        <section id="services">
+            <section id="services-container">
+                <section id="service1">
+                    <div class="services-title">
+                        <h4>Film-making / Video-Production</h4>
+                    </div>
+                    <hr>
+                    <div class="services-list">
+                        <li>Pre-production / production</li>
+                        <li>Editing</li>
+                        <li>Colour Grading</li>
+                        <li>Sound Design</li>
+                    </div>
+                    <div class="services-button-container">
+                        <button class="view-button" onclick="location.href='projects.html'">View work</button>
+                    </div>
+                </section>
+                <section id="service2">
+                    <div class="services-title">
+                        <h4>Graphic & Digital Design</h4>
+                    </div>
+                    <hr>
+                    <div class="services-list">
+                        <li>Brand identity creation</li>
+                        <li>Logo Design</li>
+                        <li>Figma UX UI Prototyping</li>
+                    </div>
+                    <div class="services-button-container">
+                        <button class="view-button" onclick="location.href='projects.html'">View work</button>
+                    </div>
+                </section>
+                <section id="service3">
+                    <div class="services-title">
+                        <h4>Animation & Motion Graphics</h4>
+                    </div>
+                    <hr>
+                    <div class="services-list">
+                        <li>3D Product animation</li>
+                        <li>3D Product renders</li>
+                        <li>Motion Graphics</li>
+                    </div>
+                    <div class="services-button-container">
+                        <button class="view-button" onclick="location.href='projects.html'">View work</button>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+<!------------------------------------------Showreel Section------------------------------------------->  
+       
+        <section id="showreel-container">
+            <section class="showreel">
+                <video class="showreel-video1" muted playsinline controls loading="lazy">
+                    <source src="/videos/Web Comp.mp4" type="video/mp4">
+                </video>
+            </section>
+        </section>
+        
+<!------------------------------------------Youtube Section------------------------------------------->
+
+        <section id="youtube-container">
+            <section class="youtube-overlay-text">
+                
+                <div id="youtube-heading">
+                    <h3>YouTube</h3>
+                    <img class="icon" src="images/JAMBO_STUDIOS_LOGOS-2024_FILMS - ON BLACK.svg" alt="logo-image"/>
+                </div>
+
+                <h4>Check out Jambo Films on Youtube</h4>
+                <p>
+                Jambo Films is our captivating YouTube channel dedicated to 
+                immersive storytelling, transforming the ordinary into extraordinary narratives.
+                </p>
+                <div class="services-button-container2">
+                    <button class="view-button" onclick="navigateToFilmsPage();">Find Out More</button>
+                    <button class="youtube-button"><a href="https://www.youtube.com/channel/UCcv-2XxSvD1lp8kySszrgkw" target="_blank">View Channel</a></button>
+                </div>
+            </section>
+        </section>
+
+<!------------------------------------------Contact form------------------------------------------->
+        <section id="contact">
+            <h3 id="contact-heading">Let's get in touch
+                <img class="icon2" src="Images/mail.png" alt="illustration of paper-plane" style="width: 70px;"/>
+            </h3>
+            <section id="contact-description">
+                <div class="contact-wrappers">
+                    <h5 class="highlighted">
+                    <b>Email |</b> 
+                    <br> admin@jambostudiosau.com</h5>
+                </div>
+
+                <div class="contact-wrappers">
+                    <h5 class="highlighted">
+                    <b>Inquiries |</b> 
+                    <br> Fill out the <b><em>contact form</em></b></h5>
+                </div>
+            </section>
+            <img class="icon" src="Images/Arrow.png" alt="logo-image"/>           
+        </section>
+        <iframe id="form" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" 
+            src="https://my.forms.app/form/65cb529751206f3b32d884f0" frameborder="0" style= "border:none;"></iframe>
+            
+
+    </main>
+    <!------------------------------------------Contact Section------------------------------------------->
+
+
+
+    <footer>
+        <section id="contact-info">
+            <h3>Get in touch with me</h3>
+            <div id="footer-text">
+            <p><b><em>Click</em></b> on the mail or linkedin icon which will redirect you to the 
+                the right place to contact me... </p>
+            </div>
+            <div class="contact-icons">
+                <a href="mailto: admin@jambostudiosau.com" subject="subject-text">
+                    <img id="logos2" src="https://img.icons8.com/cute-clipart/256/null/apple-mail.png" alt="mail-link"/>
+                </a>
+                <a href="https://www.linkedin.com/in/adilafzaal/" subject="subject-text">
+                    <img id="logos3" src="https://img.icons8.com/fluency/144/null/linkedin.png"/>
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://forms.app/static/embed.js" type="text/javascript" async defer onload="new formsapp('65cb529751206f3b32d884f0', 'popover', {'button':{'color':'#ff9e24'},'align':'right'});"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="path/to/flickity.pkgd.min.js"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function navigateToFilmsPage() {
+            window.open("films.html", "_blank"); // Open films.html in a new tab
+            removeFocus(); // Call removeFocus function if needed
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
