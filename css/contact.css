@@ -1,0 +1,65 @@
+footer{
+    margin-top: 2rem;
+    background-color: #101010;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    max-width: 100%;
+    height: 25rem;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#footer-text{
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#contact-info{
+    padding: 0;
+    margin:0 auto;
+    animation: fade-in 2s ease-in-out forwards;
+}
+
+.contact-icons{
+    padding: 1rem;
+}
+
+#logos2{
+    width: 3rem;
+    margin: 0.5rem;
+}
+
+#logos2:hover{
+    transform: scale(130%);
+    transition: transform 0.2s ease-in-out;
+}
+
+#logos2::after{
+    transform: scale(100%);
+    transition: transform 0.2s ease-in-out;
+}
+
+#logos3{
+    width: 3rem;
+    margin: 0.5rem;
+}
+
+#logos3:hover{
+    transform: scale(130%);
+    transition: transform 0.2s ease-in-out;
+}
+
+#logos3::after{
+    transform: scale(100%);
+    transition: transform 0.2s ease-in-out;
+}
+
+/*--Media query--*/
+@media screen and (max-width: 600px){
+    #contact-info, #contact p{
+        width: 18rem;
+    }
+}

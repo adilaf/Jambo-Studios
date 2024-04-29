@@ -1,0 +1,925 @@
+/*  
+    Some parts in this stylesheet have been made with the assistance of
+    Chat-GPT, W3Schools and other sources which will be provided in the 
+    respective area                           
+*/
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width:100vw;
+    background-color: #F1F2F2;
+    /*background: linear-gradient(180deg, #FFFFFF 17.38%, rgba(84, 113, 121, 0.09) 71.88%, rgba(224, 106, 50, 0.05) 100%);*/
+}
+
+main{
+    width: 100vw;
+}
+
+
+/*==========================NAV============================*/
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav{
+    margin: 0;
+    position: fixed;
+    z-index: 2;
+}
+
+/* The hamburger menu code is from:
+    https://code-boxx.com/simple-responsive-pure-css-hamburger-menu/
+    and has been adjusted and changed to fit my website although a 
+    few elements remain the same */
+
+ 
+#hamnav {
+    width: 100%;
+    background: #ffffff;
+    justify-content: center;
+}
+
+  /* (B) HORIZONTAL MENU ITEMS */
+
+#hamitems {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+#hamitems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    color: #231F20;
+    text-decoration: none;
+    text-align: center;
+    display: flex; /* Align text and icon in a flex container */
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+#hamitems a:hover {
+    color: #E1824E;
+}
+
+.icon {
+    width: 100px;
+    margin: 0 auto;
+    transform: scale(150%);
+    box-shadow: none;
+}
+
+.link {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 5px; /* Adjust the value as needed */
+}
+
+  /* (C) HIDE HAMBURGER */
+#hamnav label, #hamburger { display: none; }
+
+
+
+
+/*-------------------------------------------------------*/
+
+/*=====================HOME SECTION======================*/
+
+#heading{
+    display: block;
+    width: 50%;
+    text-align: left;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    justify-content: center;
+    color: #F1F2F2;
+}
+
+#sub-heading{
+    display: block;
+    text-align: left;
+    position: absolute;
+    color: #F1F2F2;
+    width: 100%;
+}
+
+
+:hover.link{
+    color: #3077E2;;
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+:active.link{
+    color: #E5E5E5;
+    transform: scale(100%);
+    animation: ease-in;
+}
+
+#home {
+    width: 100vw;
+    height: 1000vh; /* Adjust height as needed */
+    position: relative;
+}
+
+.holder {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#video1{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    border-radius: 0;
+    z-index: 0;
+}
+
+iframe{
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#heading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    color: white;
+    z-index: 0;
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+.hide-heading {
+    opacity: 0;
+}
+
+.dynamic-word {
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+    opacity: 1; /* Ensure initial opacity */
+    color:#E1824E;
+
+}
+
+.hero-subheading{
+    width: fit-content;
+    display: inline-block;
+    flex-wrap: wrap;
+    background: none;
+    text-align: left;
+    margin: 0.2rem;
+    flex-direction: row;
+    padding: 10px;
+    border: #E1824E 1px solid;
+    border-radius: 20rem;
+    transition: opacity 2s ease; /* Add transition for opacity */
+    color: #E1824E;
+}
+
+
+.hero-subheading:hover {
+    background: linear-gradient(45deg, #E1824E, #ffa631);
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease-in infinite;
+    color: #F1F2F2;
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+  
+
+img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#about{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 30rem;
+    margin:0 auto;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+
+#Adils-img{
+    width: 50%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 20px 0px 0px 20px;
+    opacity: 100%;
+    animation: infinite;
+}
+
+
+#about-description{
+    margin: 0 auto;
+    width: 50%;
+    padding: 3rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgba(247, 247, 247);
+    animation: fade-in 0.5s ease-in-out forwards;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#about-heading{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-button, .youtube-button{
+    background-color: #E1824E;
+    color: #F1F2F2;
+    margin-left: 0.5rem;
+}
+
+.view-button{
+    background-color: #F1F2F2;
+    color: #231F20;
+    margin-right: 0.5rem;
+}
+
+.view-button:hover{
+    background-color: #3077E2;
+    color: #E5E5E5;
+}
+
+.contact-button:hover, .youtube-button:hover{
+    background-color: #3077E2;
+    color: #E5E5E5;
+}
+
+.services-button-container{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.services-button-container2{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+
+/*------------Container Heading Span Tags------------*/
+.container-title{
+    padding: 5px 10px;
+    text-align:center;
+    margin: 0 auto;
+    background-color: #225dff;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 5px 0px 0px 5px;
+    font-family: 'Signika Negative', sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+.container-subheading{
+    padding: 5px 10px;
+    font-family: 'Signika Negative', sans-serif;
+    left: 10px;
+    color: #5c5c5c;
+    font-size: 18px;
+    border-radius: 0px 5px 5px 0px;;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+}
+
+
+#showreel-container{
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+/*============================#current/ Recent on Main page============================*/
+/*  SOME AREAS of the code in this section was AI assissted and 
+    elemnets from W3Schools may have also been used   */
+
+#current{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+    align-content: center;
+    animation: fade-in 2s ease-in-out forwards;
+    background-color: #ffa631;
+    background-image: url("../Images/icons.png");
+    background-size: 35%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.recent-content2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:0 auto;
+    height: 30rem;
+    align-content: center;
+    /*background-image: url(../Images/giraffe1.jpg);*/
+    background-size: cover; /* This will cover the entire element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: 50% 50%; /* This centers the image in the element */
+    opacity: 1; /* 100% opacity */
+}
+
+.recent-content1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    height: 30rem;
+    align-content: center;
+    /*background-image: url(../Images/paper-3155438_1920.jpg);*/
+    background-size: cover; /* This will cover the entire element */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    background-position: 50% 50%; /* This centers the image in the element */
+    opacity: 1; /* 100% opacity */
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin: 0 auto;
+    width: 45%;
+    height: 26rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 10 10 10 black;
+    background-color: rgba(247, 247, 247);
+    animation: fade-in 0.5s ease-in-out forwards;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.description-span{
+    padding: 5px 10px;
+    text-align:center;
+    margin: 2px;
+    background-color: #D5D5D5;
+    color: #2A2A2A;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.description-span2{
+    padding: 5px 10px;
+    text-align:center;
+    margin: 2px;
+    background-color: #F1F1F1;
+    color: #333;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    width: 18rem;
+}
+
+
+.text-wrap{
+    display: block;
+    justify-content: center;
+    padding: 0;
+    text-align: center; /* Add this line to ensure text is centered */
+}
+
+.text-wrap p {
+    text-align: center;
+    margin: 0 auto; /* This centers the paragraph if it has a specified width */
+    width: 70%; /* Ensure the paragraph takes the full width */
+}
+
+
+.desc-video-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 36%;
+    height: 50%;
+}
+
+.desc-video-container, video{
+    border: none;
+    border-radius: 20px;
+}
+
+#logos1{
+    display: flex;
+    position: absolute;
+    left: 10%;
+    margin-top: 11%;
+    width: 50px;
+    box-shadow: none;
+}
+
+#logos1:hover{
+   transform: scale(150%);
+}
+
+#logos1::after{
+    transform: scale(100%);
+ }
+
+
+
+/*============================#Services============================*/
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 4rem;
+    width: 100%;
+    padding-bottom: 4rem;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+
+#services.active {
+    background-image: url("../Images/videoBG.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 1;
+}
+
+
+#services-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 auto;
+    width: 80%;
+    border: color #E5E5E5 1px solid;
+}
+
+#service1, #service2, #service3{
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    justify-content: center;
+    margin: 2rem;
+    padding: 6rem;
+    color: #F1F2F2;
+}
+
+#service1{
+    background-image:url("../Images/sonyfx30.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#service2{
+    background-image:url("../Images/design.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#service3{
+    background-image:url("../Images/lambo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.services-title{
+    width: 60%;
+    height: auto;
+    margin: 2rem;
+    color: #F1F2F2;
+}
+
+.services-list{
+    padding: 3rem;
+}
+
+.services-heading{
+    color: #E5E5E5;
+}
+
+
+
+
+
+/*============================Youtube Section============================*/
+
+#youtube-container{
+    width: auto;
+    height: auto;
+    background-image: url("../Images/Sky\ on\ fire-3.jpg");
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    justify-content: center;
+    padding-bottom: 3rem;
+    padding-top:2rem;
+}
+
+#youtube-heading{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
+.youtube-overlay-text{
+    width: 45%;
+    height: 100%;
+    padding: 3rem;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    color: #F1F2F2;
+}
+
+/*============================Form============================*/
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 45%;
+}
+
+.contact-wrappers{
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-description{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon2{
+    width: 50px;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+#form{
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0 auto;
+    width: 80%;
+    height: 34rem;
+}
+
+.popover {
+    height: 500px; /* Set the desired height in pixels */
+}
+
+.highlighted{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: #231F20 1px solid;
+    width: 100%;
+    margin: 0.2rem;
+    padding: 0.6rem;
+}
+
+#arrow{
+    width: 100px;
+}
+
+
+
+/* Add additional styles if needed */
+
+
+
+/*======================MEDIA QUERIES=========================*/    
+
+
+/*---------------------Max-Width 1000px for NAVIGATION----------------------*/
+
+@media screen and (max-width: 1000px){
+    #hamnav {
+        width: 100%;
+    }
+    
+    /* (A) BREAK INTO VERTICAL MENU */
+    #hamitems a {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+    
+    /* (B) SHOW HAMBURGER ICON */
+    #hamnav label { 
+        display: inline-block; 
+        color: white;
+        background: #ffa631;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    
+    /* (C) TOGGLE SHOW/HIDE MENU */
+    #hamitems { display: none; }
+    #hamnav input:checked ~ #hamitems { 
+        display: block; 
+        animation: fade-in 1s ease-in-out forwards;
+    }
+
+
+}
+
+
+
+/*---------------------Max-Width 1000px-----------------------*/
+@media screen and (max-width: 1000px){
+    #video1{
+        height: 100vh;
+    }
+
+    #heading{ 
+        display: flex;
+        flex-direction: column;
+        left: 40%;
+    }
+
+    #sub-heading{
+        top: 90%;
+     }
+
+     
+    #button-container {
+        top: 30rem;
+    }
+
+    #current{
+        width: 100%; 
+    }
+
+    #about{
+        width: 90%;
+        height: auto;
+        margin:0 auto;
+    }
+    
+    .recent-content2, .slider-content{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 55rem;
+        width: 100%
+    }
+
+    .recent-content1{
+        display: flex;
+        flex-direction: column;
+        height: 55rem;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .description, .slider-description{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        height: 26rem;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    iframe{
+        width: 100%;
+        height: 30rem;
+    }
+
+    #services{
+        width: 100%;
+        margin-top: 3rem;
+        border-radius: 0px;
+        padding-bottom: 4rem;
+    }
+
+    #services-container{
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+        border-radius: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #service1, #service2, #service3{
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        height: auto;
+        padding: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .services-title{
+        height: auto;
+    }
+
+    .youtube-overlay-text{
+        width: 80%;
+        height: auto;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    #contact{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #form{
+        width: 90%;
+        height: 35rem;
+    }
+
+}
+
+
+
+/*---------------------Max-Width 600px-----------------------*/
+@media screen and (max-width: 600px){
+
+    #home{
+        background-color: #2A2A2A;
+    }
+
+
+
+    #sub-heading{
+       top: 95%;
+    }
+
+    #about{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin:0 auto;
+        padding-top: 2rem;
+    }
+
+    #Adils-img{
+        height: 15rem;
+        width: auto;
+        border-radius: 20px 20px 0px 0px;
+    }
+    
+    #about-description{
+        height: auto;
+        width: auto;
+        padding: 2rem;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    #button-container {
+        top: 30rem;
+        left: 40%;
+        margin-top: 0rem;
+    }
+
+
+    .recent-content2, .slider-content{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        height: 50rem;
+        justify-content: center;
+    }
+
+    .recent-content1{
+        display: flex;
+        flex-direction: column;
+        height: 50rem;
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    .description, .slider-description{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        width: 90%;
+        height: 28rem;
+    }
+
+    iframe{
+        width: 100%;
+        height: 15rem;
+    }
+
+    #current{
+        background-size: 80%;
+    }
+    
+    #services-container{
+        width: 85%;
+    }
+
+    #service1, #service2, #service3{
+        width: 100%;
+        height: auto;
+    }
+
+    .services-list{
+        padding: 2rem;
+    }
+
+    .services-button-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .services-button-container2{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .contact-button{
+        background-color: #E1824E;
+        color: #F1F2F2;
+        margin: 0.5rem;
+    }
+
+    .view-button{
+        background-color: #F1F2F2;
+        color: #231F20;
+        margin: 0.5rem;
+    }
+
+
+    #contact-description{
+        display: flex;
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,330 @@
+
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------------Films----------------- */
+
+.films-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/*--iframe{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+}*/
+
+.iframe-container{
+    height: 50%;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 5rem;
+}
+
+.films-description{
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.films-description > h4 {
+    margin: 1rem;
+}
+
+.Films-Intro, .Gopro, .Sydney, .Melbourne, .three{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    scroll-snap-align: start;
+    background-image: url('../Images/videoBG.png');
+    background-size: cover;
+    background-position: center;
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+#heading2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    color: white;
+    z-index: 0;
+    transition: opacity 0.5s ease; /* Add transition for opacity */
+}
+
+#video2{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    border-radius: 0;
+    z-index: 0;
+}
+
+
+
+
+/*BUTTONS*/
+
+/* W3Schools code was implemented in some areas of this code.
+A special thanks to W3Schools and their tools */
+
+/* ------------project-button is used for the [PROJECT] section ---------------*/
+
+
+
+.project-button {
+    display: inline-block;
+    padding: 6px 14px;
+    width: 130px;
+    text-align: center;
+    cursor: pointer;
+    color: #2a2a2a;
+    background-color:rgb(255, 255, 255);
+    border:none;
+    border-color: black;
+    border-width: 1.5px;
+    border-style: solid;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    margin: 0.2rem auto;
+  }
+  
+.project-button:hover {
+    background-color: #225dff;
+    color: #fff;
+    transform: translateY(4px);
+    transform: scale(105%);
+}
+
+.project-button:focus{
+    background-color:#ffa631;
+    transform: scale(100%);
+    transition: transform 0.2s ease-in-out;
+}
+
+#button-link{
+    display: flex;
+    text-align: center;
+}
+
+
+/*-----------All other sections in projects----------------------*/
+
+#recent, 
+#studentWork, 
+#filmmaking,
+#films,
+#photography, 
+#design,
+#animation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 2rem;
+    text-align: center;
+    align-content: center;
+}
+
+
+.showreel{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.showreel-video1{
+    width: 75%;
+    height: 100%;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+
+.section-heading{
+    margin: 2rem ;
+}
+
+.prototype-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: auto;
+    width: 90%;
+}
+
+.prototypes{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    box-shadow: none;
+}
+
+
+.frame-description{
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.frame-description > h5 {
+    margin: 2rem;
+}
+
+.frame-description > p {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.frame-description{
+    justify-content: flex-start;
+    margin: 0 auto;
+    color: #2a2a2a;
+    padding-bottom: 2rem;
+}
+
+.frame-description{
+    margin: 0.5rem;
+    color: #2a2a2a;
+}
+
+.dropdown-content {
+    display: none;
+    /* Add any additional styling as needed */
+}
+
+
+i.fas.fa-chevron-down.dropdown-icon {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #2a2a2a;
+    margin-bottom: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.4s ease; /* Add transition for smooth rotation */
+}
+
+.fas.fa-chevron-down.dropdown-icon.active {
+    transform: rotateX(180deg); /* Rotate when active */
+    background-color: #ffa631;
+}
+
+
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 20%; /* IE 10 */
+    flex: 20%;
+    margin: 1rem;
+}
+
+.column img {
+    margin-bottom: 2rem;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1000px){
+
+    .films-container {
+        width: 100vw;
+    }
+
+    .iframe-container{
+        width: 80%;
+    }
+
+    .films-description{
+        width: 80%;
+    }
+
+    .showreel-video1{
+        width: 80%;
+    }
+
+    .prototype-container{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .frame-description{
+        margin:0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .iframe-container{
+        height: 40%;
+    }
+
+    .showreel-video1{
+        width: 100%;
+        height: 15rem;
+    }
+
+    .prototypes{
+        width: 90%;
+    }
+
+    .tags2, .tags{
+        transform: scale(0.9);
+    }
+
+    .row {
+        display: block;
+    }
+
+}
