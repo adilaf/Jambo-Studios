@@ -484,11 +484,12 @@ img{
     background-color: transparent;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+
 }
 
 
 #services.active {
-    
+    background-image: url("../Images/lightBG.svg");
     background-size: cover;
     background-position: 50% 50%;
     opacity: 1;
