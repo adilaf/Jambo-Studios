@@ -488,7 +488,7 @@ img{
 
 
 #services.active {
-    background-image: url("../Images/videoBG.png");
+    
     background-size: cover;
     background-position: 50% 50%;
     opacity: 1;
